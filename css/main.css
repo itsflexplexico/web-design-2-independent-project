@@ -11,6 +11,15 @@ html {
   box-sizing: inherit;
 }
 
+article,
+footer,
+header,
+main,
+nav,
+section, {
+  display: block;
+}
+
 body {
   margin: 0;
   width: 100%;
@@ -21,22 +30,35 @@ body {
 
 header {
   display: block;
-
 }
 
-nav ul {
-  white-space: nowrap;
+.header-nav {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+}
+
+nav {
+  display: block;
 }
 
 nav li {
   display: inline-block;
-  margin: 0 0.8rem 0 0;
-  padding: 0.5rem 0;
 }
 
 ul, li {
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #676767;
 }
 
 .banner-image {
@@ -47,9 +69,24 @@ ul, li {
   bottom: 2rem;
 }
 
+section {
+  margin: 0 auto;
+  max-width: 87.5rem;
+  position: relative;
+}
+
 footer {
   display: block;
-  background-color: #EEE;
+  background-color: #0f0f0f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999999;
+}
+
+.footer-nav {
+
 }
 
 @media only screen and (min-width: 38em) {
