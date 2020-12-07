@@ -88,6 +88,7 @@ a:hover {
   width: 200%;
   height: 200%;
 }
+
 .image-bg img {
   position:absolute;
   top: 0;
@@ -113,10 +114,12 @@ footer {
   height: 75px;
   background-color: #0f0f0f;
 }
+
 footer ul.footerleft{
   text-align: center;
   margin-top: 15px;
 }
+
 footer ul.footerleft li{
   display: inline;
 }
@@ -132,11 +135,11 @@ footer a:hover{
 }
 
 .footer-bottom{
-	width: 100%;
-	padding: 10px 0;
-	text-align: center;
-	color: #EEE;
-	background: #0f0f0f);
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: #EEE;
+  background: #0f0f0f);
   font-size: 12px;
 }
 
