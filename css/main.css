@@ -25,7 +25,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Spartan', sans-serif;
-  background-color: #EEE;
+  background-color: #0f0f0f;
 }
 
 header {
@@ -38,29 +38,28 @@ nav {
   left: 0;
 }
 
-.header-nav-wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  height: 5.7rem;
-}
-
-.header-nav {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  right: 2rem;
-}
-
-nav li {
-  display: inline-block;
-}
-
-ul, li {
+ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #0f0f0f;
+}
+
+.main-nav-ul li {
+  float: left;
+}
+
+.main-nav-ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.main-nav-ul li a:hover {
+  background-color: #676767;
 }
 
 a {
@@ -68,37 +67,47 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #676767;
+.img {
+  max-height: auto;
+  position: relative;
+  overflow: hidden;
 }
 
-.banner-title {
+.img-flex {
+  display: block;
+  width: 100%;
+  background-size: cover;
+}
+
+a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+
+.banner {
   position: absolute;
   top: 2rem;
   left: 2rem;
   width: 100%;
   z-index: 101;
+  color: #EEE;
 }
 
-.image-bg {
-  padding-top: 1rem;
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+.btn {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #EEE;
+  border: 1px solid #EEE;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
 }
 
-.image-bg img {
-  position:absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
-  opacity: 65%;
+.btn:hover {
+  color: #EEE;
+  background-color: rgba(237, 237, 237, 0.3);
+  border: 1px solid #EEE;
 }
 
 section {
@@ -108,11 +117,9 @@ section {
 }
 
 footer {
-  bottom: 0;
   width: 100%;
-  position: fixed;
-  height: 75px;
   background-color: #0f0f0f;
+  max-height: 75px;
 }
 
 footer ul.footerleft{
@@ -142,6 +149,31 @@ footer a:hover{
   background: #0f0f0f);
   font-size: 12px;
 }
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
 
 @media only screen and (min-width: 38em) {
 
